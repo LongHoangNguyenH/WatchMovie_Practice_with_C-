@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "160c049c-65f2-44b8-acc3-05b198d26d54": {
+      "ProjectGuid": "160c049c-65f2-44b8-acc3-05b198d26d54",
+      "DisplayName": "MovieWatch",
+      "ColorIndex": 0
+    },
+    "6b5af6f5-c784-4025-8f15-14715bb12d7f": {
+      "ProjectGuid": "6b5af6f5-c784-4025-8f15-14715bb12d7f",
+      "DisplayName": "LuyenTap",
+      "ColorIndex": 1
+    },
+    "b576c890-af99-4ef2-8fc6-cb87e7de2eb5": {
+      "ProjectGuid": "b576c890-af99-4ef2-8fc6-cb87e7de2eb5",
+      "DisplayName": "embed_link",
+      "ColorIndex": 2
+    },
+    "aef41d72-e438-4627-bfe5-4f3499042ad4": {
+      "ProjectGuid": "aef41d72-e438-4627-bfe5-4f3499042ad4",
+      "DisplayName": "adsfasdf",
+      "ColorIndex": 3
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "6a03dcc5-d55e-4269-b246-2bd470821663": {
+      "ProjectGuid": "6a03dcc5-d55e-4269-b246-2bd470821663",
+      "DisplayName": "BaiTap",
+      "ColorIndex": 4
+    },
+    "32d92af2-0a41-47b3-a364-b73b0365c26e": {
+      "ProjectGuid": "32d92af2-0a41-47b3-a364-b73b0365c26e",
+      "DisplayName": "draft",
+      "ColorIndex": 5
+    }
+  },
+  "NextColorIndex": 6
+}

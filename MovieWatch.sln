@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MovieWatch", "MovieWatch\MovieWatch.csproj", "{160C049C-65F2-44B8-ACC3-05B198D26D54}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{160C049C-65F2-44B8-ACC3-05B198D26D54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{160C049C-65F2-44B8-ACC3-05B198D26D54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{160C049C-65F2-44B8-ACC3-05B198D26D54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{160C049C-65F2-44B8-ACC3-05B198D26D54}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {44C3DE71-6AF6-4B5A-A83D-EA8EA0727592}
+	EndGlobalSection
+EndGlobal

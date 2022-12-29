@@ -1,0 +1,311 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{160C049C-65F2-44B8-ACC3-05B198D26D54}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>MovieWatch</RootNamespace>
+    <AssemblyName>MovieWatch</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AForge, Version=2.2.5.0, Culture=neutral, PublicKeyToken=c1db6ff4eaa06aeb, processorArchitecture=MSIL">
+      <HintPath>..\packages\AForge.2.2.5\lib\AForge.dll</HintPath>
+    </Reference>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.AxShockwaveFlashObjects.13.0.4001\lib\net40\AxShockwaveFlashObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="Jurassic, Version=3.2.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Jurassic.3.2.6\lib\netstandard2.0\Jurassic.dll</HintPath>
+    </Reference>
+    <Reference Include="libvideo, Version=3.2.2.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\VideoLibrary.3.2.2\lib\netstandard2.0\libvideo.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="ShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <HintPath>..\packages\CrystalReports.ShockwaveFlashObjects.13.0.4001\lib\net40\ShockwaveFlashObjects.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing.Common, Version=4.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Drawing.Common.5.0.0\lib\net461\System.Drawing.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="YoutubeExtractor, Version=0.10.11.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\YoutubeExtractor.0.10.11\lib\net35\YoutubeExtractor.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="comment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="comment.Designer.cs">
+      <DependentUpon>comment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateAccount.Designer.cs">
+      <DependentUpon>CreateAccount.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreatePlayList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreatePlayList.Designer.cs">
+      <DependentUpon>CreatePlayList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Feedback.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Feedback.Designer.cs">
+      <DependentUpon>Feedback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Film.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Film.Designer.cs">
+      <DependentUpon>Film.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FilmPlay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FilmPlay.Designer.cs">
+      <DependentUpon>FilmPlay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Film_History.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Film_History.Designer.cs">
+      <DependentUpon>Film_History.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Film_info.cs" />
+    <Compile Include="Film_In_Playlist.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Film_In_Playlist.Designer.cs">
+      <DependentUpon>Film_In_Playlist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Film_UI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Film_UI.Designer.cs">
+      <DependentUpon>Film_UI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainUI.Designer.cs">
+      <DependentUpon>MainUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="playlist_user.cs" />
+    <Compile Include="Playu_Playlist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Playu_Playlist.Designer.cs">
+      <DependentUpon>Playu_Playlist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sign_In.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sign_In.Designer.cs">
+      <DependentUpon>Sign_In.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="User.cs" />
+    <EmbeddedResource Include="comment.resx">
+      <DependentUpon>comment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateAccount.resx">
+      <DependentUpon>CreateAccount.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreatePlayList.resx">
+      <DependentUpon>CreatePlayList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Feedback.resx">
+      <DependentUpon>Feedback.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Film.resx">
+      <DependentUpon>Film.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FilmPlay.resx">
+      <DependentUpon>FilmPlay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Film_History.resx">
+      <DependentUpon>Film_History.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Film_In_Playlist.resx">
+      <DependentUpon>Film_In_Playlist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Film_UI.resx">
+      <DependentUpon>Film_UI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainUI.resx">
+      <DependentUpon>MainUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Playu_Playlist.resx">
+      <DependentUpon>Playu_Playlist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sign_In.resx">
+      <DependentUpon>Sign_In.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\find.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BadKarma.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Heart_off.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Heart_on.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\star_off.png" />
+    <None Include="Resources\star_on.png" />
+    <None Include="Resources\user.png" />
+    <None Include="Resources\user1.png" />
+    <None Include="Resources\add.png" />
+    <Content Include="video\7ngayyeu.mp4" />
+    <Content Include="video\badkarma.mp4" />
+    <Content Include="video\Bufallo_rider.mp4" />
+    <Content Include="video\CauVang.mp4" />
+    <Content Include="video\chungquyphucma.mp4" />
+    <Content Include="video\cohoiduocsong.mp4" />
+    <Content Include="video\doibongtremocoi.mp4" />
+    <Content Include="video\huyenthoaikungfu.mp4" />
+    <Content Include="video\ILostMyBody.mp4" />
+    <Content Include="video\KyNghiTaiUong.mp4" />
+    <Content Include="video\linhduyen.mp4" />
+    <Content Include="video\LinhHonLacLoi.mp4" />
+    <Content Include="video\LoiMoiGoiLucNuaDem.mp4" />
+    <Content Include="video\nguoibanngoaihanhtinh.mp4" />
+    <Content Include="video\nhiepannuong.mp4" />
+    <Content Include="video\Norah.mp4" />
+    <Content Include="video\OanHonTrongMua.mp4" />
+    <Content Include="video\Oz.mp4" />
+    <Content Include="video\pablo.mp4" />
+    <Content Include="video\PhiVuTrieuDo.mp4" />
+    <Content Include="video\planLekcji.mp4" />
+    <Content Include="video\rumrunners.mp4" />
+    <Content Include="video\shiraz.mp4" />
+    <Content Include="video\thehootowl.mp4" />
+    <Content Include="video\Tinkerbell_Cotiengiupich.mp4" />
+    <Content Include="video\TinkerBell_private.mp4" />
+    <Content Include="video\TomAndJerry.mp4" />
+    <Content Include="video\trieudo.mp4" />
+    <Content Include="video\Votoilagangster.mp4" />
+    <Content Include="video\xedayhoa.mp4" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxMSVidCtlLib">
+      <Guid>{B0EDF154-910A-11D2-B632-00C04F79498E}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="MSVidCtlLib">
+      <Guid>{B0EDF154-910A-11D2-B632-00C04F79498E}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
